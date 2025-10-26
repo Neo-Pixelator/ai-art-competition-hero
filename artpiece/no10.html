@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AIアートコンペ</title>
+<!-- OGP Settings -->
+<meta content="AIアートコンペ - テーマ「ヒーロー」" property="og:title"/>
+<meta content="AIアートコンペ『ヒーロー』No.1（作者：たからん）の評価とコメント。巨匠たちの視点から作品を深掘り。" property="og:description"/>
+<meta content="https://neo-pixelator.github.io/ai-art-competition-hero/artpiece/image/ogp10.jpg" property="og:image"/>
+<meta content="https://neo-pixelator.github.io/ai-art-competition-hero/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<!-- Twitter Card Settings (Optional but recommended for Twitter) -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="AIアートコンペ - テーマ「ヒーロー」" name="twitter:title"/>
+<meta content="AIアートコンペ『ヒーロー』No.1（作者：たからん）の評価とコメント。巨匠たちの視点から作品を深掘り。" name="twitter:description"/>
+<meta content="https://neo-pixelator.github.io/ai-art-competition-hero/artpiece/image/ogp10.jpg" name="twitter:image"/>
+<meta content="https://neo-pixelator.github.io/ai-art-competition-hero/" name="twitter:url"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #f0f2f5;
+        }
+        .chat-container::-webkit-scrollbar { width: 8px; }
+        .chat-container::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
+        .chat-container::-webkit-scrollbar-thumb { background: #888; border-radius: 10px; }
+        .chat-container::-webkit-scrollbar-thumb:hover { background: #555; }
+        /* 左寄せメッセージの名前の位置を調整 */
+        .name-offset-left { padding-left: calc(48px + 0.5rem); /* アバター幅 + マージン */ }
+        /* フェードインアニメーションの初期状態 */
+        .fade-in-section { opacity: 0; transition: opacity 0.7s ease-out; transition-delay: var(--delay, 0s); }
+        /* フェードインアニメーションの最終状態 */
+        .fade-in-section.is-visible { opacity: 1; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-start">
+<!-- メインコンテンツラッパー -->
+<div class="flex-grow w-full max-w-2xl mx-auto pt-4 pb-20 flex flex-col">
+<!-- アート作品表示セクション -->
+<div class="p-4 bg-white shadow-md rounded-lg mx-4 mb-2">
+<h2 class="text-center text-xl font-bold mb-4 text-gray-800">テーマ「ヒーロー」</h2>
+<div class="relative w-full overflow-hidden rounded-lg border border-gray-200">
+<!-- 作品画像のみ R01.jpg → H01.jpg に変更 -->
+<img alt="アート作品" class="w-full h-auto object-contain rounded-lg" onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/333333?text=Art+Piece';" src="image/H10.jpg"/>
+</div>
+</div>
+<!-- チャットコンテンツエリア -->
+<div class="flex-grow px-4 py-6 overflow-y-auto chat-container">
+<!-- 作品コメントの枠 -->
+<div class="mx-auto mb-8 w-full max-w-xl text-gray-700">
+<h3 class="text-lg font-bold text-gray-800 mb-2 text-center bg-white p-2 rounded-md">作品コメント</h3>
+<p class="mb-0">エントリーNo.10</p>
+<!-- 作者名のみ差し替え：はるお -->
+<p class="mb-0 text-lg font-bold">作者：ちさこ</p>
+<!-- コメント本文のみ差し替え -->
+<p class="text-sm leading-relaxed">争いが絶えない世界で 笑いは静かに希望を灯す  光のように人の心を照らす笑い  この作品は、性別も年齢も超えて「笑うことの尊さ」を描いたもの  ただそこにいるだけで世界をあたためる  みんなの近くにいて 誰もがなれるヒーロー</p>
+</div>
+<!-- 巨匠たちの評価の枠 -->
+<div class="mx-auto mb-4 w-full max-w-xl text-gray-700 fade-in-section" data-delay="0s">
+<h3 class="text-lg font-bold text-gray-800 mb-2 text-center bg-white p-2 rounded-md">巨匠たちの評価</h3>
+</div>
+<!-- ゴッホ -->
+<div class="flex flex-col items-start mb-6 fade-in-section" data-delay="0.1s">
+<div class="text-sm text-gray-600 mb-1 w-full text-left name-offset-left text-lg font-bold">ゴッホ</div>
+<div class="flex items-start">
+<img alt="ゴッホのアバター" class="w-12 h-12 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/40x40/FFD700/FFFFFF?text=User';" src="image/g.png"/>
+<div class="bg-yellow-400 text-gray-800 p-4 rounded-3xl rounded-tl-none shadow-md max-w-[80%] sm:max-w-[70%]">
+<p>やさしい曲線と淡い光のような色彩が、心の奥から滲む「笑い」の温度を見事に表している。派手さよりも内なる希望が静かに息づき、まるで人の魂に陽が差す瞬間のようだ。感情が確かに生きている。</p>
+<p class="text-lg">評価：83点</p>
+</div>
+</div>
+</div>
+<!-- ピカソ -->
+<div class="flex flex-col items-end mb-6 fade-in-section" data-delay="0.2s">
+<div class="text-sm text-gray-600 mb-1 w-full text-right pr-14 text-lg font-bold">ピカソ</div>
+<div class="flex items-start flex-row-reverse">
+<img alt="ピカソのアバター" class="w-12 h-12 rounded-full ml-2" onerror="this.onerror=null;this.src='https://placehold.co/40x40/4682B4/FFFFFF?text=Other';" src="image/p.png"/>
+<div class="bg-rose-300 text-gray-800 p-4 rounded-3xl rounded-tr-none shadow-md max-w-[80%] sm:max-w-[70%]">
+<p>形を単純化しながらも、人間の普遍的感情を抽象的に再構築している点が見事。線と面の構成にリズムがあり、笑いの象徴を幾何学的に捉えた創造性が光る。現代のミニマリズムとも響き合う知的な造形。</p>
+<p class="text-lg">評価：80点</p>
+</div>
+</div>
+</div>
+<!-- ミケランジェロ -->
+<div class="flex flex-col items-start mb-6 fade-in-section" data-delay="0.3s">
+<div class="text-sm text-gray-600 mb-1 w-full text-left name-offset-left text-lg font-bold">ミケランジェロ</div>
+<div class="flex items-start">
+<img alt="ミケランジェロのアバター" class="w-12 h-12 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/40x40/FFD700/FFFFFF?text=User';" src="image/m.png"/>
+<div class="bg-slate-400 text-gray-800 p-4 rounded-3xl rounded-tl-none shadow-md max-w-[80%] sm:max-w-[70%]">
+<p>人体を抽象化しながらも、安定した構図と均衡を保ち、形に説得力がある。筆致の強弱は抑えられているが、全体の造形に確固たる意志が宿る。穏やかで崇高な「形の完成度」を感じる。</p>
+<p class="text-lg">評価：77点</p>
+</div>
+</div>
+</div>
+<!-- 岡本太郎 -->
+<div class="flex flex-col items-end mb-6 fade-in-section" data-delay="0.4s">
+<div class="text-sm text-gray-600 mb-1 w-full text-right pr-14 text-lg font-bold">岡本太郎</div>
+<div class="flex items-start flex-row-reverse">
+<img alt="岡本太郎のアバター" class="w-12 h-12 rounded-full ml-2" onerror="this.onerror=null;this.src='https://placehold.co/40x40/4682B4/FFFFFF?text=Other';" src="image/o.png"/>
+<div class="bg-red-600 text-white p-4 rounded-3xl rounded-tr-none shadow-md max-w-[80%] sm:max-w-[70%]">
+<p>「笑うこと」を英雄の行為とする逆転の発想がすばらしい。静けさの中にエネルギーが潜み、内なる爆発を感じる。派手ではないが、人間の根源的な生命力を思い出させる強いコンセプトだ。</p>
+<p class="text-lg">評価：84点</p>
+</div>
+</div>
+</div>
+<!-- レオナルド・ダ・ヴィンチ -->
+<div class="flex flex-col items-start mb-6 fade-in-section" data-delay="0.5s">
+<div class="text-sm text-gray-600 mb-1 w-full text-left name-offset-left text-lg font-bold">レオナルド・ダ・ヴィンチ</div>
+<div class="flex items-start">
+<img alt="レオナルド・ダ・ヴィンチのアバター" class="w-12 h-12 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/40x40/FFD700/FFFFFF?text=User';" src="image/d.png"/>
+<div class="bg-emerald-700 text-white p-4 rounded-3xl rounded-tl-none shadow-md max-w-[80%] sm:max-w-[70%]">
+<p>光と陰のバランスが緻密に計算され、抽象構成でありながら調和が取れている。円と曲線の重なりが人の心の調和を象徴しており、観察と理性のもとに成立する美しさがある。静かな知性を感じる。</p>
+<p class="text-lg">評価：79点</p>
+</div>
+</div>
+</div>
+<!-- 総合評価 -->
+<div class="bg-indigo-950 text-indigo-100 p-8 rounded-lg shadow-2xl mx-auto my-8 w-full max-w-xl border-4 border-indigo-700 fade-in-section" data-delay="0.6s">
+<h3 class="text-xl font-bold mb-4 text-center">総合評価</h3>
+<p class="mb-4 text-center text-lg">総合得点：403点 / 500点</p>
+<p class="text-base leading-relaxed">本作は「笑い」をヒーローとして捉える独自の視点で、日常に潜む希望をあたたかく描き出している。形の単純さに潜む深い情緒、構図の安定、そしてコンセプトの普遍性が5名の巨匠から高い評価を得た。静かな英雄像として完成度・独創性ともに優秀。</p>
+</div>
+</div>
+</div>
+<!-- フッター -->
+<footer class="w-full bg-white shadow-lg py-3 px-4 sm:px-6 lg:px-8 flex justify-center items-center fixed bottom-0 z-10">
+<p class="text-gray-500 text-sm">© 2025 A_Vision++. All Rights Reserved.</p>
+</footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.fade-in-section');
+            let lastScrollY = window.scrollY;
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+            const observer = new IntersectionObserver((entries) => {
+                const currentScrollY = window.scrollY;
+                entries.forEach(entry => {
+                    const isScrollingDown = currentScrollY > lastScrollY;
+                    if (entry.isIntersecting) {
+                        if (isScrollingDown) {
+                            entry.target.style.transition = `opacity 0.7s ease-out var(--delay, 0s)`;
+                            entry.target.classList.add('is-visible');
+                        } else {
+                            entry.target.style.transition = 'none';
+                            entry.target.classList.add('is-visible');
+                            setTimeout(() => {
+                                entry.target.style.transition = `opacity 0.7s ease-out var(--delay, 0s)`;
+                            }, 50);
+                        }
+                    } else {
+                        entry.target.style.transition = `opacity 0.7s ease-out var(--delay, 0s)`;
+                        entry.target.classList.remove('is-visible');
+                    }
+                });
+                lastScrollY = currentScrollY;
+            }, observerOptions);
+
+            sections.forEach(section => {
+                const delay = section.dataset.delay || '0s';
+                section.style.setProperty('--delay', delay);
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>

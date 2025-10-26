@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AIアートコンペ</title>
+<!-- OGP Settings -->
+<meta content="AIアートコンペ - テーマ「ヒーロー」" property="og:title"/>
+<meta content="AIアートコンペ『ヒーロー』No.1（作者：たからん）の評価とコメント。巨匠たちの視点から作品を深掘り。" property="og:description"/>
+<meta content="https://neo-pixelator.github.io/ai-art-competition-hero/artpiece/image/ogp11.jpg" property="og:image"/>
+<meta content="https://neo-pixelator.github.io/ai-art-competition-hero/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<!-- Twitter Card Settings (Optional but recommended for Twitter) -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="AIアートコンペ - テーマ「ヒーロー」" name="twitter:title"/>
+<meta content="AIアートコンペ『ヒーロー』No.1（作者：たからん）の評価とコメント。巨匠たちの視点から作品を深掘り。" name="twitter:description"/>
+<meta content="https://neo-pixelator.github.io/ai-art-competition-hero/artpiece/image/ogp11.jpg" name="twitter:image"/>
+<meta content="https://neo-pixelator.github.io/ai-art-competition-hero/" name="twitter:url"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #f0f2f5;
+        }
+        .chat-container::-webkit-scrollbar { width: 8px; }
+        .chat-container::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
+        .chat-container::-webkit-scrollbar-thumb { background: #888; border-radius: 10px; }
+        .chat-container::-webkit-scrollbar-thumb:hover { background: #555; }
+        /* 左寄せメッセージの名前の位置を調整 */
+        .name-offset-left { padding-left: calc(48px + 0.5rem); /* アバター幅 + マージン */ }
+        /* フェードインアニメーションの初期状態 */
+        .fade-in-section { opacity: 0; transition: opacity 0.7s ease-out; transition-delay: var(--delay, 0s); }
+        /* フェードインアニメーションの最終状態 */
+        .fade-in-section.is-visible { opacity: 1; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-start">
+<!-- メインコンテンツラッパー -->
+<div class="flex-grow w-full max-w-2xl mx-auto pt-4 pb-20 flex flex-col">
+<!-- アート作品表示セクション -->
+<div class="p-4 bg-white shadow-md rounded-lg mx-4 mb-2">
+<h2 class="text-center text-xl font-bold mb-4 text-gray-800">テーマ「ヒーロー」</h2>
+<div class="relative w-full overflow-hidden rounded-lg border border-gray-200">
+<!-- 作品画像のみ R01.jpg → H01.jpg に変更 -->
+<img alt="アート作品" class="w-full h-auto object-contain rounded-lg" onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/333333?text=Art+Piece';" src="image/H11.jpg"/>
+</div>
+</div>
+<!-- チャットコンテンツエリア -->
+<div class="flex-grow px-4 py-6 overflow-y-auto chat-container">
+<!-- 作品コメントの枠 -->
+<div class="mx-auto mb-8 w-full max-w-xl text-gray-700">
+<h3 class="text-lg font-bold text-gray-800 mb-2 text-center bg-white p-2 rounded-md">作品コメント</h3>
+<p class="mb-0">エントリーNo.11</p>
+<!-- 作者名のみ差し替え：はるお -->
+<p class="mb-0 text-lg font-bold">作者：きしゃぽっぽ</p>
+<!-- コメント本文のみ差し替え -->
+<p class="text-sm leading-relaxed">タイトル：「20年前の僕へ」  <br/>あの頃の僕が描いたヒーローは、きっと今の僕だったんだと思う。 泣き虫で、弱くて、その時は誰かに守られてばかりだった。 でも今は大人になって、誰かを守る側に立っているよ。 ありがとう、あの頃の僕。ちゃんとヒーローになれたよ。</p>
+</div>
+<!-- 巨匠たちの評価の枠 -->
+<div class="mx-auto mb-4 w-full max-w-xl text-gray-700 fade-in-section" data-delay="0s">
+<h3 class="text-lg font-bold text-gray-800 mb-2 text-center bg-white p-2 rounded-md">巨匠たちの評価</h3>
+</div>
+<!-- ゴッホ -->
+<div class="flex flex-col items-start mb-6 fade-in-section" data-delay="0.1s">
+<div class="text-sm text-gray-600 mb-1 w-full text-left name-offset-left text-lg font-bold">ゴッホ</div>
+<div class="flex items-start">
+<img alt="ゴッホのアバター" class="w-12 h-12 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/40x40/FFD700/FFFFFF?text=User';" src="image/g.png"/>
+<div class="bg-yellow-400 text-gray-800 p-4 rounded-3xl rounded-tl-none shadow-md max-w-[80%] sm:max-w-[70%]">
+<p>この絵には、幼い筆致の中に確かな魂がある。色は震え、線は揺れ、しかしそこに宿る感情は真実だ。子どもの頃の自分を「ヒーロー」として描く行為こそ、最も痛切で美しい自己救済の物語だ。懸命に描かれた青と赤の対比は、恐怖と勇気の葛藤を映している。私はその「生きた感情」を確かに感じた。</p>
+<p class="text-lg">評価：86点</p>
+</div>
+</div>
+</div>
+<!-- ピカソ -->
+<div class="flex flex-col items-end mb-6 fade-in-section" data-delay="0.2s">
+<div class="text-sm text-gray-600 mb-1 w-full text-right pr-14 text-lg font-bold">ピカソ</div>
+<div class="flex items-start flex-row-reverse">
+<img alt="ピカソのアバター" class="w-12 h-12 rounded-full ml-2" onerror="this.onerror=null;this.src='https://placehold.co/40x40/4682B4/FFFFFF?text=Other';" src="image/p.png"/>
+<div class="bg-rose-300 text-gray-800 p-4 rounded-3xl rounded-tr-none shadow-md max-w-[80%] sm:max-w-[70%]">
+<p>ここには「描くこと」そのものの自由がある。形は歪み、空間は揺れ、だがそれがこの作品の核心だ。子どもの線が、最も純粋なキュビスムだと私は思う。記憶と現在が重なり、自己の再構築が行われている。ヒーローとは何か──この絵は、その問いを無邪気な手で解体している。</p>
+<p class="text-lg">評価：82点</p>
+</div>
+</div>
+</div>
+<!-- ミケランジェロ -->
+<div class="flex flex-col items-start mb-6 fade-in-section" data-delay="0.3s">
+<div class="text-sm text-gray-600 mb-1 w-full text-left name-offset-left text-lg font-bold">ミケランジェロ</div>
+<div class="flex items-start">
+<img alt="ミケランジェロのアバター" class="w-12 h-12 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/40x40/FFD700/FFFFFF?text=User';" src="image/m.png"/>
+<div class="bg-slate-400 text-gray-800 p-4 rounded-3xl rounded-tl-none shadow-md max-w-[80%] sm:max-w-[70%]">
+<p>構造は稚拙に見えるが、内面の力は確かだ。線の一本一本が、自らを形づくろうとする意志を帯びている。これは鍛え上げられた「形」ではなく、まだ石の中に眠る「理想」そのものだ。幼き自分への敬意と成長の自覚──それがこの作品の彫刻的な精神性を支えている。</p>
+<p class="text-lg">評価：78点</p>
+</div>
+</div>
+</div>
+<!-- 岡本太郎 -->
+<div class="flex flex-col items-end mb-6 fade-in-section" data-delay="0.4s">
+<div class="text-sm text-gray-600 mb-1 w-full text-right pr-14 text-lg font-bold">岡本太郎</div>
+<div class="flex items-start flex-row-reverse">
+<img alt="岡本太郎のアバター" class="w-12 h-12 rounded-full ml-2" onerror="this.onerror=null;this.src='https://placehold.co/40x40/4682B4/FFFFFF?text=Other';" src="image/o.png"/>
+<div class="bg-red-600 text-white p-4 rounded-3xl rounded-tr-none shadow-md max-w-[80%] sm:max-w-[70%]">
+<p>いいぞ！これは爆発している！クレヨンの軌跡が生命の叫びだ。技巧も構図も関係ない。「守られていた自分」が「守る側になった」と宣言する、その瞬間のエネルギーがキャンバスを突き破っている。これぞ真のヒーロー像。芸術は説明ではなく衝撃だ。君の手がそれを証明している。</p>
+<p class="text-lg">評価：89点</p>
+</div>
+</div>
+</div>
+<!-- レオナルド・ダ・ヴィンチ -->
+<div class="flex flex-col items-start mb-6 fade-in-section" data-delay="0.5s">
+<div class="text-sm text-gray-600 mb-1 w-full text-left name-offset-left text-lg font-bold">レオナルド・ダ・ヴィンチ</div>
+<div class="flex items-start">
+<img alt="レオナルド・ダ・ヴィンチのアバター" class="w-12 h-12 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/40x40/FFD700/FFFFFF?text=User';" src="image/d.png"/>
+<div class="bg-emerald-700 text-white p-4 rounded-3xl rounded-tl-none shadow-md max-w-[80%] sm:max-w-[70%]">
+<p>この作品は観察ではなく「記憶」に基づいている。しかしその中に心理的な整合がある。光の配置、構図の重心、キャラクターの位置関係──すべてが無意識のうちに調和を保っている。理屈を超えた均衡が、この子どもの視点から自然に生まれている。まさに心の透視図法である。</p>
+<p class="text-lg">評価：79点</p>
+</div>
+</div>
+</div>
+<!-- 総合評価 -->
+<div class="bg-indigo-950 text-indigo-100 p-8 rounded-lg shadow-2xl mx-auto my-8 w-full max-w-xl border-4 border-indigo-700 fade-in-section" data-delay="0.6s">
+<h3 class="text-xl font-bold mb-4 text-center">総合評価</h3>
+<p class="mb-4 text-center text-lg">総合得点：414点 / 500点</p>
+<p class="text-base leading-relaxed">幼き視点と成熟した自己認識が交差する、極めて詩的な「ヒーロー」像。技術的完成度ではなく、感情の真実と記憶の再構成によって観る者の心を打つ。描線の無垢さは弱さではなく、むしろ力強い自己証言である。五人の巨匠全員が異口同音に「本物の感情」を感じ取った、優れた作品。</p>
+</div>
+</div>
+</div>
+<!-- フッター -->
+<footer class="w-full bg-white shadow-lg py-3 px-4 sm:px-6 lg:px-8 flex justify-center items-center fixed bottom-0 z-10">
+<p class="text-gray-500 text-sm">© 2025 A_Vision++. All Rights Reserved.</p>
+</footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.fade-in-section');
+            let lastScrollY = window.scrollY;
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+            const observer = new IntersectionObserver((entries) => {
+                const currentScrollY = window.scrollY;
+                entries.forEach(entry => {
+                    const isScrollingDown = currentScrollY > lastScrollY;
+                    if (entry.isIntersecting) {
+                        if (isScrollingDown) {
+                            entry.target.style.transition = `opacity 0.7s ease-out var(--delay, 0s)`;
+                            entry.target.classList.add('is-visible');
+                        } else {
+                            entry.target.style.transition = 'none';
+                            entry.target.classList.add('is-visible');
+                            setTimeout(() => {
+                                entry.target.style.transition = `opacity 0.7s ease-out var(--delay, 0s)`;
+                            }, 50);
+                        }
+                    } else {
+                        entry.target.style.transition = `opacity 0.7s ease-out var(--delay, 0s)`;
+                        entry.target.classList.remove('is-visible');
+                    }
+                });
+                lastScrollY = currentScrollY;
+            }, observerOptions);
+
+            sections.forEach(section => {
+                const delay = section.dataset.delay || '0s';
+                section.style.setProperty('--delay', delay);
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>

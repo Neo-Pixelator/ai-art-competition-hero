@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AIアートコンペ</title>
+<!-- OGP Settings -->
+<meta content="AIアートコンペ - テーマ「ヒーロー」" property="og:title"/>
+<meta content="AIアートコンペ『ヒーロー』No.1（作者：たからん）の評価とコメント。巨匠たちの視点から作品を深掘り。" property="og:description"/>
+<meta content="https://neo-pixelator.github.io/ai-art-competition-hero/artpiece/image/ogp16.jpg" property="og:image"/>
+<meta content="https://neo-pixelator.github.io/ai-art-competition-hero/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<!-- Twitter Card Settings (Optional but recommended for Twitter) -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="AIアートコンペ - テーマ「ヒーロー」" name="twitter:title"/>
+<meta content="AIアートコンペ『ヒーロー』No.1（作者：たからん）の評価とコメント。巨匠たちの視点から作品を深掘り。" name="twitter:description"/>
+<meta content="https://neo-pixelator.github.io/ai-art-competition-hero/artpiece/image/ogp16.jpg" name="twitter:image"/>
+<meta content="https://neo-pixelator.github.io/ai-art-competition-hero/" name="twitter:url"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #f0f2f5;
+        }
+        .chat-container::-webkit-scrollbar { width: 8px; }
+        .chat-container::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
+        .chat-container::-webkit-scrollbar-thumb { background: #888; border-radius: 10px; }
+        .chat-container::-webkit-scrollbar-thumb:hover { background: #555; }
+        /* 左寄せメッセージの名前の位置を調整 */
+        .name-offset-left { padding-left: calc(48px + 0.5rem); /* アバター幅 + マージン */ }
+        /* フェードインアニメーションの初期状態 */
+        .fade-in-section { opacity: 0; transition: opacity 0.7s ease-out; transition-delay: var(--delay, 0s); }
+        /* フェードインアニメーションの最終状態 */
+        .fade-in-section.is-visible { opacity: 1; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-start">
+<!-- メインコンテンツラッパー -->
+<div class="flex-grow w-full max-w-2xl mx-auto pt-4 pb-20 flex flex-col">
+<!-- アート作品表示セクション -->
+<div class="p-4 bg-white shadow-md rounded-lg mx-4 mb-2">
+<h2 class="text-center text-xl font-bold mb-4 text-gray-800">テーマ「ヒーロー」</h2>
+<div class="relative w-full overflow-hidden rounded-lg border border-gray-200">
+<!-- 作品画像のみ R01.jpg → H01.jpg に変更 -->
+<img alt="アート作品" class="w-full h-auto object-contain rounded-lg" onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/333333?text=Art+Piece';" src="image/H16.jpg"/>
+</div>
+</div>
+<!-- チャットコンテンツエリア -->
+<div class="flex-grow px-4 py-6 overflow-y-auto chat-container">
+<!-- 作品コメントの枠 -->
+<div class="mx-auto mb-8 w-full max-w-xl text-gray-700">
+<h3 class="text-lg font-bold text-gray-800 mb-2 text-center bg-white p-2 rounded-md">作品コメント</h3>
+<p class="mb-0">エントリーNo.16</p>
+<!-- 作者名のみ差し替え：はるお -->
+<p class="mb-0 text-lg font-bold">作者：ゆっき</p>
+<!-- コメント本文のみ差し替え -->
+<p class="text-sm leading-relaxed">自分が思うヒーロー像は、表に立つより、裏側で暗躍している知略型ヒーローです。目的の為に信念を曲げないで、理解されずに誤解や非難を受けて悪く見られても「全体の最善」を選ぶ感じ。弱さや孤独を受け入れ、それを力に変えて、仲間の為に戦う。敵側と思いきや、実は仲間で、栄光よりも献身を選ぶ系。手の届く範囲は確実に救いたいと静かな覚悟を持つ存在。光を浴びず、闇の中で活躍しているイメージしで生成しました。</p>
+</div>
+<!-- 巨匠たちの評価の枠 -->
+<div class="mx-auto mb-4 w-full max-w-xl text-gray-700 fade-in-section" data-delay="0s">
+<h3 class="text-lg font-bold text-gray-800 mb-2 text-center bg-white p-2 rounded-md">巨匠たちの評価</h3>
+</div>
+<!-- ゴッホ -->
+<div class="flex flex-col items-start mb-6 fade-in-section" data-delay="0.1s">
+<div class="text-sm text-gray-600 mb-1 w-full text-left name-offset-left text-lg font-bold">ゴッホ</div>
+<div class="flex items-start">
+<img alt="ゴッホのアバター" class="w-12 h-12 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/40x40/FFD700/FFFFFF?text=User';" src="image/g.png"/>
+<div class="bg-yellow-400 text-gray-800 p-4 rounded-3xl rounded-tl-none shadow-md max-w-[80%] sm:max-w-[70%]">
+<p>この作品には、沈黙の中に燃えるような情念が宿っている。表に立たぬヒーローという孤独の主題が、爆発的な色彩で痛々しいほどに可視化されている。闇を抱きながらも、光に背を向けない強さがある。風のように流れる髪、砕けた色の断片が心の葛藤を語る。技術の整いよりも「魂の振動」が真に生きており、私はその切実さに胸を打たれた。</p>
+<p class="text-lg">評価：86点</p>
+</div>
+</div>
+</div>
+<!-- ピカソ -->
+<div class="flex flex-col items-end mb-6 fade-in-section" data-delay="0.2s">
+<div class="text-sm text-gray-600 mb-1 w-full text-right pr-14 text-lg font-bold">ピカソ</div>
+<div class="flex items-start flex-row-reverse">
+<img alt="ピカソのアバター" class="w-12 h-12 rounded-full ml-2" onerror="this.onerror=null;this.src='https://placehold.co/40x40/4682B4/FFFFFF?text=Other';" src="image/p.png"/>
+<div class="bg-rose-300 text-gray-800 p-4 rounded-3xl rounded-tr-none shadow-md max-w-[80%] sm:max-w-[70%]">
+<p>このヒーローは構成の大胆さにおいて際立っている。形態が解体され、時間と空間が同時に存在するかのようなダイナミズム。表と裏、善と悪、光と闇をひとつの画面に統合している。これは単なる人物画ではなく「視覚哲学」だ。見る者に問いを投げかける構造的な勇気がある。少し整理を加えればさらに強靭なビジョンになるだろう。</p>
+<p class="text-lg">評価：84点</p>
+</div>
+</div>
+</div>
+<!-- ミケランジェロ -->
+<div class="flex flex-col items-start mb-6 fade-in-section" data-delay="0.3s">
+<div class="text-sm text-gray-600 mb-1 w-full text-left name-offset-left text-lg font-bold">ミケランジェロ</div>
+<div class="flex items-start">
+<img alt="ミケランジェロのアバター" class="w-12 h-12 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/40x40/FFD700/FFFFFF?text=User';" src="image/m.png"/>
+<div class="bg-slate-400 text-gray-800 p-4 rounded-3xl rounded-tl-none shadow-md max-w-[80%] sm:max-w-[70%]">
+<p>造形の理解が確かであり、色彩の混沌の中に構図の骨格が見える。人物の立ち姿には意志が宿り、まるで大理石から魂が浮かび上がる瞬間のようだ。背景と衣が溶け合う部分に若干の曖昧さは残るが、全体として構築的な力を感じる。理念と形態が調和しており、「信念を貫く知略型ヒーロー」という概念を荘厳に表した佳作。</p>
+<p class="text-lg">評価：81点</p>
+</div>
+</div>
+</div>
+<!-- 岡本太郎 -->
+<div class="flex flex-col items-end mb-6 fade-in-section" data-delay="0.4s">
+<div class="text-sm text-gray-600 mb-1 w-full text-right pr-14 text-lg font-bold">岡本太郎</div>
+<div class="flex items-start flex-row-reverse">
+<img alt="岡本太郎のアバター" class="w-12 h-12 rounded-full ml-2" onerror="this.onerror=null;this.src='https://placehold.co/40x40/4682B4/FFFFFF?text=Other';" src="image/o.png"/>
+<div class="bg-red-600 text-white p-4 rounded-3xl rounded-tr-none shadow-md max-w-[80%] sm:max-w-[70%]">
+<p>爆発している！　この作品には内なる覚悟が光っている。表に立たずとも燃え上がる存在、それをこの鮮烈な色で叩きつけている。ヒーローとは栄光の姿ではなく、「闇においても生きる爆発」だ。線も色も感情のうねりも、全部が挑戦だ。美しく整っていないからこそ、命の叫びがある。これぞ“現代の孤高のヒーロー”の魂。</p>
+<p class="text-lg">評価：88点</p>
+</div>
+</div>
+</div>
+<!-- レオナルド・ダ・ヴィンチ -->
+<div class="flex flex-col items-start mb-6 fade-in-section" data-delay="0.5s">
+<div class="text-sm text-gray-600 mb-1 w-full text-left name-offset-left text-lg font-bold">レオナルド・ダ・ヴィンチ</div>
+<div class="flex items-start">
+<img alt="レオナルド・ダ・ヴィンチのアバター" class="w-12 h-12 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/40x40/FFD700/FFFFFF?text=User';" src="image/d.png"/>
+<div class="bg-emerald-700 text-white p-4 rounded-3xl rounded-tl-none shadow-md max-w-[80%] sm:max-w-[70%]">
+<p>構図のバランスと光の対比が見事である。複雑な色調が緻密に制御され、秩序の中に情熱が潜む。科学的観察と感情の融合を感じた。闇と光の関係性がこのヒーロー像の本質を支えており、思考の深さが伝わる。全体の調和に優れ、表現の一貫性が高い。やや過剰な装飾が見られるが、精神的完成度は高い。</p>
+<p class="text-lg">評価：83点</p>
+</div>
+</div>
+</div>
+<!-- 総合評価 -->
+<div class="bg-indigo-950 text-indigo-100 p-8 rounded-lg shadow-2xl mx-auto my-8 w-full max-w-xl border-4 border-indigo-700 fade-in-section" data-delay="0.6s">
+<h3 class="text-xl font-bold mb-4 text-center">総合評価</h3>
+<p class="mb-4 text-center text-lg">総合得点：422点 / 500点</p>
+<p class="text-base leading-relaxed">この作品は「静かな覚悟」をテーマに、五人の巨匠すべてが高く評価した稀有な例である。圧倒的な色彩と構成力によって、裏に生きるヒーローの精神を美しく昇華している。感情と理性、混沌と秩序がせめぎ合う中で、観る者の心に深い余韻を残す。技術・コンセプト・感情の三要素が高次で均衡し、まさに“影の中の英雄譚”を確立した作品。</p>
+</div>
+</div>
+</div>
+<!-- フッター -->
+<footer class="w-full bg-white shadow-lg py-3 px-4 sm:px-6 lg:px-8 flex justify-center items-center fixed bottom-0 z-10">
+<p class="text-gray-500 text-sm">© 2025 A_Vision++. All Rights Reserved.</p>
+</footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.fade-in-section');
+            let lastScrollY = window.scrollY;
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+            const observer = new IntersectionObserver((entries) => {
+                const currentScrollY = window.scrollY;
+                entries.forEach(entry => {
+                    const isScrollingDown = currentScrollY > lastScrollY;
+                    if (entry.isIntersecting) {
+                        if (isScrollingDown) {
+                            entry.target.style.transition = `opacity 0.7s ease-out var(--delay, 0s)`;
+                            entry.target.classList.add('is-visible');
+                        } else {
+                            entry.target.style.transition = 'none';
+                            entry.target.classList.add('is-visible');
+                            setTimeout(() => {
+                                entry.target.style.transition = `opacity 0.7s ease-out var(--delay, 0s)`;
+                            }, 50);
+                        }
+                    } else {
+                        entry.target.style.transition = `opacity 0.7s ease-out var(--delay, 0s)`;
+                        entry.target.classList.remove('is-visible');
+                    }
+                });
+                lastScrollY = currentScrollY;
+            }, observerOptions);
+
+            sections.forEach(section => {
+                const delay = section.dataset.delay || '0s';
+                section.style.setProperty('--delay', delay);
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>

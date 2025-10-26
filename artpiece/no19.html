@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AIアートコンペ</title>
+<!-- OGP Settings -->
+<meta content="AIアートコンペ - テーマ「ヒーロー」" property="og:title"/>
+<meta content="AIアートコンペ『ヒーロー』No.1（作者：たからん）の評価とコメント。巨匠たちの視点から作品を深掘り。" property="og:description"/>
+<meta content="https://neo-pixelator.github.io/ai-art-competition-hero/artpiece/image/ogp19.jpg" property="og:image"/>
+<meta content="https://neo-pixelator.github.io/ai-art-competition-hero/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<!-- Twitter Card Settings (Optional but recommended for Twitter) -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="AIアートコンペ - テーマ「ヒーロー」" name="twitter:title"/>
+<meta content="AIアートコンペ『ヒーロー』No.1（作者：たからん）の評価とコメント。巨匠たちの視点から作品を深掘り。" name="twitter:description"/>
+<meta content="https://neo-pixelator.github.io/ai-art-competition-hero/artpiece/image/ogp19.jpg" name="twitter:image"/>
+<meta content="https://neo-pixelator.github.io/ai-art-competition-hero/" name="twitter:url"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #f0f2f5;
+        }
+        .chat-container::-webkit-scrollbar { width: 8px; }
+        .chat-container::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
+        .chat-container::-webkit-scrollbar-thumb { background: #888; border-radius: 10px; }
+        .chat-container::-webkit-scrollbar-thumb:hover { background: #555; }
+        /* 左寄せメッセージの名前の位置を調整 */
+        .name-offset-left { padding-left: calc(48px + 0.5rem); /* アバター幅 + マージン */ }
+        /* フェードインアニメーションの初期状態 */
+        .fade-in-section { opacity: 0; transition: opacity 0.7s ease-out; transition-delay: var(--delay, 0s); }
+        /* フェードインアニメーションの最終状態 */
+        .fade-in-section.is-visible { opacity: 1; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-start">
+<!-- メインコンテンツラッパー -->
+<div class="flex-grow w-full max-w-2xl mx-auto pt-4 pb-20 flex flex-col">
+<!-- アート作品表示セクション -->
+<div class="p-4 bg-white shadow-md rounded-lg mx-4 mb-2">
+<h2 class="text-center text-xl font-bold mb-4 text-gray-800">テーマ「ヒーロー」</h2>
+<div class="relative w-full overflow-hidden rounded-lg border border-gray-200">
+<!-- 作品画像のみ R01.jpg → H01.jpg に変更 -->
+<img alt="アート作品" class="w-full h-auto object-contain rounded-lg" onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/333333?text=Art+Piece';" src="image/H19.jpg"/>
+</div>
+</div>
+<!-- チャットコンテンツエリア -->
+<div class="flex-grow px-4 py-6 overflow-y-auto chat-container">
+<!-- 作品コメントの枠 -->
+<div class="mx-auto mb-8 w-full max-w-xl text-gray-700">
+<h3 class="text-lg font-bold text-gray-800 mb-2 text-center bg-white p-2 rounded-md">作品コメント</h3>
+<p class="mb-0">エントリーNo.19</p>
+<!-- 作者名のみ差し替え：はるお -->
+<p class="mb-0 text-lg font-bold">作者：晴麗（seirei）</p>
+<!-- コメント本文のみ差し替え -->
+<p class="text-sm leading-relaxed">光を継ぐ者 —The Keeper of Light—<br/>声にならない想いが静かに光へと変わる<br/>名を持たぬ祈りが世界の片隅を照らしていく　ヒーローとは　誰かの中に生まれる希望<br/>わたしの中にも　まだ消えない炎がある<br/>その灯を　今日も受け継いでいく</p>
+</div>
+<!-- 巨匠たちの評価の枠 -->
+<div class="mx-auto mb-4 w-full max-w-xl text-gray-700 fade-in-section" data-delay="0s">
+<h3 class="text-lg font-bold text-gray-800 mb-2 text-center bg-white p-2 rounded-md">巨匠たちの評価</h3>
+</div>
+<!-- ゴッホ -->
+<div class="flex flex-col items-start mb-6 fade-in-section" data-delay="0.1s">
+<div class="text-sm text-gray-600 mb-1 w-full text-left name-offset-left text-lg font-bold">ゴッホ</div>
+<div class="flex items-start">
+<img alt="ゴッホのアバター" class="w-12 h-12 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/40x40/FFD700/FFFFFF?text=User';" src="image/g.png"/>
+<div class="bg-yellow-400 text-gray-800 p-4 rounded-3xl rounded-tl-none shadow-md max-w-[80%] sm:max-w-[70%]">
+<p>黄金の光の中に立つ人物像は、まさに魂の炎を描いたようだ。祈りと静寂の中に確かな情熱が息づいている。色と光が心の深部に触れ、見えない希望を形にした作品だ。</p>
+<p class="text-lg">評価：86点</p>
+</div>
+</div>
+</div>
+<!-- ピカソ -->
+<div class="flex flex-col items-end mb-6 fade-in-section" data-delay="0.2s">
+<div class="text-sm text-gray-600 mb-1 w-full text-right pr-14 text-lg font-bold">ピカソ</div>
+<div class="flex items-start flex-row-reverse">
+<img alt="ピカソのアバター" class="w-12 h-12 rounded-full ml-2" onerror="this.onerror=null;this.src='https://placehold.co/40x40/4682B4/FFFFFF?text=Other';" src="image/p.png"/>
+<div class="bg-rose-300 text-gray-800 p-4 rounded-3xl rounded-tr-none shadow-md max-w-[80%] sm:max-w-[70%]">
+<p>伝統的な象徴（蓮・王冠・衣装）を、現代的構図と光の分解によって再構築している点が見事。写実の中に抽象的な精神性が滲み、古代と現在の視覚言語を橋渡ししている。</p>
+<p class="text-lg">評価：82点</p>
+</div>
+</div>
+</div>
+<!-- ミケランジェロ -->
+<div class="flex flex-col items-start mb-6 fade-in-section" data-delay="0.3s">
+<div class="text-sm text-gray-600 mb-1 w-full text-left name-offset-left text-lg font-bold">ミケランジェロ</div>
+<div class="flex items-start">
+<img alt="ミケランジェロのアバター" class="w-12 h-12 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/40x40/FFD700/FFFFFF?text=User';" src="image/m.png"/>
+<div class="bg-slate-400 text-gray-800 p-4 rounded-3xl rounded-tl-none shadow-md max-w-[80%] sm:max-w-[70%]">
+<p>人体と衣装、光の構成が精緻であり、形と精神が一致している。特に首や腕の線に内面の緊張感が宿り、荘厳な祈りの瞬間を石に刻むように捉えている。</p>
+<p class="text-lg">評価：83点</p>
+</div>
+</div>
+</div>
+<!-- 岡本太郎 -->
+<div class="flex flex-col items-end mb-6 fade-in-section" data-delay="0.4s">
+<div class="text-sm text-gray-600 mb-1 w-full text-right pr-14 text-lg font-bold">岡本太郎</div>
+<div class="flex items-start flex-row-reverse">
+<img alt="岡本太郎のアバター" class="w-12 h-12 rounded-full ml-2" onerror="this.onerror=null;this.src='https://placehold.co/40x40/4682B4/FFFFFF?text=Other';" src="image/o.png"/>
+<div class="bg-red-600 text-white p-4 rounded-3xl rounded-tr-none shadow-md max-w-[80%] sm:max-w-[70%]">
+<p>静けさの中に爆発的なエネルギーを感じる。光を「継ぐ」という概念が、生命の連続と闘志の継承として力強く表現されている。説明ではなく“感じさせる”芸術だ。</p>
+<p class="text-lg">評価：84点</p>
+</div>
+</div>
+</div>
+<!-- レオナルド・ダ・ヴィンチ -->
+<div class="flex flex-col items-start mb-6 fade-in-section" data-delay="0.5s">
+<div class="text-sm text-gray-600 mb-1 w-full text-left name-offset-left text-lg font-bold">レオナルド・ダ・ヴィンチ</div>
+<div class="flex items-start">
+<img alt="レオナルド・ダ・ヴィンチのアバター" class="w-12 h-12 rounded-full mr-2" onerror="this.onerror=null;this.src='https://placehold.co/40x40/FFD700/FFFFFF?text=User';" src="image/d.png"/>
+<div class="bg-emerald-700 text-white p-4 rounded-3xl rounded-tl-none shadow-md max-w-[80%] sm:max-w-[70%]">
+<p>光の制御が極めて巧妙で、空気遠近法的な階調が感じられる。蓮の花の位置と視線の導線が論理的に整い、観る者に静謐な悟りの印象を与える。完成度は高い。</p>
+<p class="text-lg">評価：85点</p>
+</div>
+</div>
+</div>
+<!-- 総合評価 -->
+<div class="bg-indigo-950 text-indigo-100 p-8 rounded-lg shadow-2xl mx-auto my-8 w-full max-w-xl border-4 border-indigo-700 fade-in-section" data-delay="0.6s">
+<h3 class="text-xl font-bold mb-4 text-center">総合評価</h3>
+<p class="mb-4 text-center text-lg">総合得点：420点 / 500点</p>
+<p class="text-base leading-relaxed">「光を継ぐ者」は、ヒーローを“祈りと希望を受け継ぐ存在”として描いた詩的かつ構築的な作品である。超人的ではなく、静かな信念としての英雄像が浮かび上がる。黄金の光、蓮の象徴、沈黙の表情──それらすべてが内なる勇気を語っている。五人の巨匠すべてが高評価を与えた完成度を誇る作品。</p>
+</div>
+</div>
+</div>
+<!-- フッター -->
+<footer class="w-full bg-white shadow-lg py-3 px-4 sm:px-6 lg:px-8 flex justify-center items-center fixed bottom-0 z-10">
+<p class="text-gray-500 text-sm">© 2025 A_Vision++. All Rights Reserved.</p>
+</footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.fade-in-section');
+            let lastScrollY = window.scrollY;
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+            const observer = new IntersectionObserver((entries) => {
+                const currentScrollY = window.scrollY;
+                entries.forEach(entry => {
+                    const isScrollingDown = currentScrollY > lastScrollY;
+                    if (entry.isIntersecting) {
+                        if (isScrollingDown) {
+                            entry.target.style.transition = `opacity 0.7s ease-out var(--delay, 0s)`;
+                            entry.target.classList.add('is-visible');
+                        } else {
+                            entry.target.style.transition = 'none';
+                            entry.target.classList.add('is-visible');
+                            setTimeout(() => {
+                                entry.target.style.transition = `opacity 0.7s ease-out var(--delay, 0s)`;
+                            }, 50);
+                        }
+                    } else {
+                        entry.target.style.transition = `opacity 0.7s ease-out var(--delay, 0s)`;
+                        entry.target.classList.remove('is-visible');
+                    }
+                });
+                lastScrollY = currentScrollY;
+            }, observerOptions);
+
+            sections.forEach(section => {
+                const delay = section.dataset.delay || '0s';
+                section.style.setProperty('--delay', delay);
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
