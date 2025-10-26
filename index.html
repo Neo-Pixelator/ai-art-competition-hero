@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIアートコンペ - ヒーローのテーマ</title>
+
+  <!-- ✅ OGP設定（URLを絶対パスに修正） -->
+  <meta property="og:title" content="AIアートコンペ - ヒーローのテーマ">
+  <meta property="og:description" content="AIアートコンペ「ヒーロー」の全作品を一覧でご覧いただけます。">
+  <meta property="og:image" content="https://neo-pixelator.github.io/ai-art-competition-hero/image01/topogp01.jpg">
+  <meta property="og:image:secure_url" content="https://neo-pixelator.github.io/ai-art-competition-hero/image01/topogp01.jpg">
+  <meta property="og:url" content="https://neo-pixelator.github.io/ai-art-competition-hero/">
+  <meta property="og:type" content="website">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- ✅ Twitterカード設定 -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AIアートコンペ - ヒーローのテーマ">
+  <meta name="twitter:description" content="AIアートコンペ「ヒーロー」の全作品を一覧でご覧いただけます。">
+  <meta name="twitter:image" content="https://neo-pixelator.github.io/ai-art-competition-hero/image01/topogp01.jpg">
+  <meta name="twitter:url" content="https://neo-pixelator.github.io/ai-art-competition-hero/">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+      background: linear-gradient(180deg, #0b1020 0%, #11224a 50%, #1b3a8a 100%);
+    }
+    .container { max-width: 1200px; }
+    .card { transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
+
+    .header-bg {
+      background-color: #0e1a3a;
+      background-image: linear-gradient(135deg, #0e1a3a 0%, #1e3a8a 60%, #0ea5e9 100%);
+      color: #ffffff;
+      box-shadow: 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+    }
+    .footer-bg { background-color: #0f172a; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-start">
+
+  <!-- ヘッダー -->
+  <header class="w-full header-bg py-6 mb-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl font-bold text-center">AIアートコンペ</h1>
+      <p class="text-center mt-2 text-gray-100">
+        <span class="text-base font-medium">テーマ</span>
+        <span class="text-xl font-medium">「ヒーロー」</span>
+        <span class="text-base font-medium"> エントリー作品</span>
+      </p>
+    </div>
+  </header>
+
+  <!-- メイン -->
+  <main class="container mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+    <div id="grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+  </main>
+
+  <!-- フッター -->
+  <footer class="w-full footer-bg text-white py-3 px-4 sm:px-6 lg:px-8 flex justify-center items-center">
+    <p class="text-sm opacity-80">&copy; 2025 A_Vision++. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const authors = [
+      "はるお", "KEIKO", "たからん", "カナダ", "あげ妻", "ことさと",
+      "ヘアタカゆーすけ", "ふうか", "花の魔術師ENKI", "ちさこ",
+      "きしゃぽっぽ", "ちかこん", "とがでぃ", "そらっこ",
+      "プロンプト工房", "ゆっき", "てるにゃん", "美幸",
+      "晴麗（seirei）", "勇志", "まさこ", "きんまさ"
+    ];
+
+    const grid = document.getElementById('grid');
+    for (let i = 1; i <= authors.length; i++) {
+      const number = String(i).padStart(2, '0');
+      const li = document.createElement('a');
+      li.href = `artpiece/no${number}.html`;
+      li.className = "card block bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg";
+
+      li.innerHTML = `
+        <div class="w-full aspect-[4/3] bg-black/5 overflow-hidden">
+          <img src="image01/art${number}.jpg"
+               alt="エントリーNo.${i} 作品画像"
+               class="w-full h-full object-cover"
+               onerror="this.onerror=null;this.src='https://placehold.co/600x450/CCCCCC/333333?text=No.${i}';">
+        </div>
+        <div class="p-4 text-center">
+          <p class="text-sm text-gray-500 mb-1">エントリーNo.${i}</p>
+          <p class="text-lg font-semibold text-gray-800">作者：${authors[i-1]}</p>
+        </div>
+      `;
+      grid.appendChild(li);
+    }
+  </script>
+
+</body>
+</html>
